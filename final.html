@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Santasweeper</title>
+    <link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
+    <link href="final.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    
+    <h1>Santasweeper</h1>
+       
+  </head>
+  <body background="Xmas-HD-Background.jpg">
+    <script type="text/javascript" src="fallingsnow_v6.js"></script>
+    <div id="snowflakeContainer">
+    <p class="snowflake">*</p>
+  </div>
+
+    <div id="choose">
+
+
+    <p class="para">Choose the level of difficulty</p>
+
+   
+  <button id="one" class="lvl" >Beginner</button>
+  <button id="two" class="lvl" >Intermediate</button>
+  <button id="three" class="lvl">Advanced</button>
+
+</div>
+
+    <canvas id="canvas" width="450" height="450" style="border: 3px double #03628C;"></canvas>
+     <audio id="audio" src="jingle-bells-country.mp3"  controls hidden="true" loop="true">
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
+<audio id="audioclick" src="smb_fireball.wav" controls hidden="true"></audio>
+<audio id="gameoverclick" src="smb_gameover.wav" controls hidden="true"></audio>
+<audio id="win" src="win.mp3" controls hidden="true"></audio>
+    <button id="replay" onclick="reset()">Replay</button>
+
+        <label id="minutes">00</label><label id="seconds">00</label>
+
+    <script src="final.js"></script>
+  </body>
+</html>
